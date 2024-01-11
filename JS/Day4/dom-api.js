@@ -34,6 +34,8 @@ document.body.appendChild(para);// by this call we can append the p tag in body
 
 
 
+
+
 //Let's make LIST
 
 const hobbies = ["coding", "Swimming", "jogging"];
@@ -58,3 +60,18 @@ console.log(document.getElementsByClassName("blue")[0].textContent);
 
 console.log(document.querySelectorAll("p"));
 
+
+
+// remove this
+const box = document.createElement("div");
+box.style.height = "75px";
+box.style.width = "75px";
+box.style.backgroundColor = "palevioletred";
+
+
+const container = document.getElementById("container");
+
+container.appendChild(box);
+container.appendChild(box);
+container.appendChild(box);
+container.appendChild(box);

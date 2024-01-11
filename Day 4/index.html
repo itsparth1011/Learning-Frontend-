@@ -8,20 +8,27 @@
 </head>
 <body>
 
-    <h1>Event Handeling and From Tags</h1>
-    
-    <!-- <button onclick="handelClick()">Click Me</button> -->
-    <button id="clickme" onclick="">Click Me</button> 
-    <button id="clickme" >Click Me</button>
+    <h1 style="text-align: center;">Event Handeling and From Tags</h1> 
 
 
-    
-    <button id="start">Start</button>
-    <button id="stop">Stop</button>
+<!-- ************************ONCLICK EVENTLISTNER********************** -->
+    <!-- First way to onclick by calling a function -->
+    <button  onclick="handelClick()" >Click me btn 1</button>
+
+    <!-- second way by calling it with id name -->
+    <button id="clickme" >Click me btn  2</button>
+
+    <!-- Recommended way by adding eventlistner -->
+    <button id="clickbtn" >Click me 3 </button> 
+
+<!-- ****************************ADD & REMOVE EVENTLISTNER***************     -->
+
+<button id="start" >Start</button>
+<button id="stop" >Stop</button>
 
 
-    <label for="username">Username</label>
-    <input name="username" type="text">
+
+
 
 
 

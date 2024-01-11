@@ -1,29 +1,34 @@
-function handelClick()
-{
-    alert("You have clicked button");
+// For button  1 we can directly  make function and all it
+function handelClick(){
+    alert("You have clicked the button")
 }
-// second way to event listner
+
+// For button 2 we can get it by ID and use eventlistner onclick and shoot the function handelClick
 document.getElementById("clickme").onclick = handelClick;
 
 
-//recomended way
-document.getElementById("clickme").addEventListener("click", handelClick)
+// Recommended way: Here For button 3 we get by id and addeda eventlistner click and called function handelClick
+
+document.getElementById("clickbtn").addEventListener("click", handelClick);
 
 
 
-// Add of th eventlistner
-document.getElementById("start").addEventListener("click", function handelClick(){
+// ********************* ADD & Remove EventListner ************************
 
-    document.addEventListener("mouseover", function handelClick(event){
-        console.log(event)
-    })
+function handelMouseOver(event){
+    console.log(event)
+}
+
+
+//Event object : contains information about the event 
+//Add
+
+document.getElementById("start").addEventListener("click", function handleClick(){
+    document.addEventListener("mouseover", handelMouseOver);
 })
 
+//Remove
 
-
-// Remove of the Event Listner 
-document.getElementById("stop").addEventListener("click",  function handelClick(){
-   document.removeEventListener("mouseover", function handelClick(event){
-    console.log(event)
-   })
+document.getElementById("stop").removeEventListener("click",function handelClick(){
+    document.removeEventListener("mouseover", handelMouseOver);
 })

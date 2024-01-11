@@ -33,7 +33,7 @@ console.log(foo);
 3.
 const myName = "Bhupendra Chauhan";
 console.log(myName);
-// myName = 123; // => This will show error as we know const is not dynamic it has fixed and locked value
+myName = 123; // => This will show error as we know const is not dynamic it has fixed and locked value
 
 
 
@@ -59,11 +59,11 @@ let num1 = 10,  num2 = 20;
 console.log(num1+num2);
 
 // Increment Operator
-//console.log(num1++); // =>   Post Increment operator in this it will fist print then incriment
+console.log(num1++); // =>   Post Increment operator in this it will fist print then incriment
 console.log(num1);
 
 //Decrement Operator
-//console.log(++num1); // => Pre inceremnt operator in this  it wil first increment the it will print
+console.log(++num1); // => Pre inceremnt operator in this  it wil first increment the it will print
 
 //
 num1 = num1 + 2;
@@ -74,8 +74,8 @@ console.log(num1);
 //Subtract operator
 console.log(num2-num1);
 
-// console.log(num1--);  // => Decrement operator 
-//console.log(--num1); 
+console.log(num1--);  // => Decrement operator 
+console.log(--num1); 
 
 // Multply operator
 console.log(num1*num2);
@@ -154,9 +154,9 @@ num2 > num1 ? console.log("num2 is greater than num1") : console.log("num1 is gr
 num2 = 5;
 num2 > num1 ? console.log("num2 is greater than num1") : num1<num2 ? console.log("num1 is greater than num1") : console.log(" both are equal")
 
-// Switch cases in JS
+Switch cases in JS
 
-num1 = 2;
+num1 = 9;
 switch(num1){
     case 1:
         console.log("Sunday");
@@ -166,7 +166,7 @@ switch(num1){
         console.log("Monday");
         break;
     
-    case31:
+    case 3:
         console.log("Tuesday");
         break;
     
